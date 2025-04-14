@@ -27,15 +27,17 @@
         <h1>Meeting minutes</h1>
         <h2>Brainstorming session</h2>
         <h3>4/14/25</h3>
-        <p>
-            <strong>This webpage represents the meeting minutes for our team.</strong><br>
-             It is built with only <i>HTML</i>
-        </p>
+        <details>
+            <summary>Details</summary>
+            <p><strong>This webpage represents the meeting minutes for our team.</strong><br>
+                It is built with only <i>HTML</i></p>
+        </details>
+
         <hr>
         <img src="https://m.media-amazon.com/images/I/81MoV7qLkrL.jpg" alt="Image description" width="200" height="200">
 
         <section id="content"> 
-            <div class = "AttendanceList">
+            <div class = "AttendanceList" id = "AttendanceList">
                 <h4>Attendance</h4>
                 <ul>
                     <li>John Doe</li>
@@ -45,7 +47,7 @@
             </div>
         
         
-            <div class = "Agenda">
+            <div class = "Agenda" id = "Agenda">
                 <h4>Agenda</h4>
                 <ol>
                     <li>Project</li>
@@ -54,7 +56,7 @@
                 </ol>
             </div>
             
-            <div class = "Unfinished">
+            <div class = "Unfinished" id = "Unfinished">
                 <h4>Unfinished</h4>
                 <ol>
                     <li>item 1</li>
@@ -63,29 +65,16 @@
                 </ol>
             </div>
         
-            <div class = "NewBusiness">
+            <div class = "NewBusiness" id = "NewBusiness">
                 <h4>New Business</h4>
                 <ol>
-                    <li>item 1
-                        <details>
-                            <summary>Details</summary>
-                            <p>item 1 details</p>
-                        </details>
-                    </li>
+                    <li>item 1</li>
                     <li>item 2</li>
-                        <details>
-                            <summary>Details</summary>
-                            <p>item 2 details</p>
-                        </details>
                     <li>item 3</li>
-                        <details>
-                            <summary>Details</summary>
-                            <p>item 3 details</p>
-                        </details>
                 </ol>
             </div>
         
-            <div class = "Miscellaneous">
+            <div class = "Miscellaneous" id = "Miscellaneous">
                 <h4>Miscellaneous <em>(Additional comments, etc)</em></h4>
                 <ul>
                     <li>item 1</li>
@@ -129,8 +118,8 @@
                 <label>Design</label><br><br>
         
                 <label>Choose a number</label><br>
-                <input list="topics">
-                <datalist>
+                <input list="numbers">
+                <datalist id = "numbers">
                     <option value="1">
                     <option value="2">
                     <option value="3">
