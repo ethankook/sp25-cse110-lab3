@@ -9,6 +9,7 @@ header h1{
     text-align: center;
     margin: 0;
 }
+
 header nav {
     font-size: 4mm;
     justify-content: center;
@@ -22,6 +23,18 @@ body #Lebron{
     width: 10cm;
     height: auto;
     display: block;
+}
+
+#content{
+    font-size: 1.2rem;
+}
+
+main details {
+    font-size: 0.9rem;
+}
+
+main p {
+    font-size: 0.8rem;
 }
 
 footer form{
