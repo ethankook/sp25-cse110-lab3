@@ -10,6 +10,7 @@ header {
     border-style: dashed;
     border-color: black;
     border-radius: 3rem;
+    position: sticky;
 }
 header h1{
     text-align: center;
@@ -21,7 +22,7 @@ header nav {
     text-align: center;
     padding: 3mm;
     display: inline;
-    position: sticky;
+    position: relative;
     
 }
 
