@@ -1,1 +1,5 @@
-/* StyleSheet for Meeting Minutes /*
+/* StyleSheet for Meeting Minutes */
+
+footer form{
+    color: gray;
+}
