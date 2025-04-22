@@ -21,6 +21,7 @@ header nav {
     text-align: center;
     padding: 3mm;
     display: inline;
+    position: sticky;
     
 }
 
@@ -49,6 +50,16 @@ main p {
     font-size: 0.8rem;
 }
 
+audio {
+    max-width: 20cm;
+    align-items: start;
+
+}
+
+video {
+    max-height: 15cm;
+    width: auto;
+}
 footer form{
 
     color: black;
