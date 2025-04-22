@@ -40,6 +40,9 @@ body #Lebron{
 
 main details {
     font-size: 0.9rem;
+    color: gray;
+    text-align: center;
+    text-decoration:underline;
 }
 
 main p {
