@@ -1,5 +1,36 @@
 /* StyleSheet for Meeting Minutes */
 
+:root{
+    --first-color: rgba(233, 231, 231, 0.949);
+
+}
+
+header h1{
+    text-align: center;
+    margin: 0;
+}
+header nav {
+    font-size: 4mm;
+    justify-content: center;
+    text-align: center;
+    padding: 1mm;
+    display: inline;
+}
+
+
+body #Lebron{
+    width: 10cm;
+    height: auto;
+    display: block;
+}
+
 footer form{
-    color: gray;
+
+    color: black;
+    background-color: var(--first-color, white);
+}
+
+footer form legend {
+    text-align: center;
+    font-size: 5mm;
 }
