@@ -4,18 +4,24 @@
     --first-color: rgba(233, 231, 231, 0.949);
 
 }
-
+header {
+    margin: 1rem;
+    border: .01rem;
+    border-style: dashed;
+    border-color: black;
+    border-radius: 3rem;
+}
 header h1{
     text-align: center;
-    margin: 0;
 }
 
 header nav {
     font-size: 4mm;
     justify-content: center;
     text-align: center;
-    padding: 1mm;
+    padding: 3mm;
     display: inline;
+    
 }
 
 
@@ -23,10 +29,13 @@ body #Lebron{
     width: 10cm;
     height: auto;
     display: block;
+    padding-top: 1rem;
+    justify-self: center;
 }
 
 #content{
     font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 main details {
