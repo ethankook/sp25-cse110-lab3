@@ -1,5 +1,10 @@
 /* StyleSheet for Meeting Minutes */
 
+:root{
+    --first-color: rgba(233, 231, 231, 0.949);
+
+}
 footer form{
-    color: gray;
+    color: black;
+    background-color: var(--first-color, white);
 }
