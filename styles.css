@@ -27,13 +27,14 @@ header nav {
 }
 
 
-body #Lebron{
+#Lebron{
     width: 10cm;
     height: auto;
     display: block;
     padding-top: 1rem;
     justify-self: center;
 }
+
 
 #content{
     font-size: 1.2rem;
@@ -67,7 +68,15 @@ footer form{
     background-color: var(--first-color, white);
 }
 
-footer form legend {
+form legend {
     text-align: center;
     font-size: 5mm;
+}
+
+fieldset button:hover{
+    transform: scale(1.1);
+}
+
+fieldset button:active{
+    border-color: blue ;
 }
