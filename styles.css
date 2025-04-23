@@ -167,3 +167,41 @@ fieldset button:hover{
 fieldset button:active{
     border-color: blue ;
 }
+
+@media (max-width: 800px){
+    #content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #content h4{
+        font-size: .8rem;
+    }
+
+    #content ul, ol {
+        font-size: .8rem;
+    }
+
+    nav ul li {
+        flex: none;
+        margin: 0.5rem 0;
+    }
+
+    nav ul a{
+        font-size: 0.7rem;
+        flex: 1;
+    }
+
+    body{
+        font-size: 0.9rem;
+    }
+
+    video{
+        max-height: 10mm;
+    }
+
+    audio{
+        max-width: 1rem;
+    }
+    
+}
