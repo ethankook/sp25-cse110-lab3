@@ -10,36 +10,123 @@ header {
     border-style: dashed;
     border-color: black;
     border-radius: 3rem;
-    position: sticky;
+    background-color: white;
+    
 }
 header h1{
     text-align: center;
 }
 
-header nav {
+nav {
     font-size: 4mm;
     justify-content: center;
     text-align: center;
     padding: 3mm;
-    display: inline;
-    position: relative;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    align-self: center;
     
 }
 
+nav ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+    justify-content: space-evenly;
+}
 
-#Lebron{
-    width: 10cm;
-    height: auto;
-    display: block;
-    padding-top: 1rem;
-    justify-self: center;
+nav ul a{
+    flex: 1;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    align-items: baseline
+}
+
+main {
+    text-align: center;
+}
+
+nav ul a:hover{
+    transform: scale(1.1);
+    background-color: rgb(197, 197, 197);
+    border-radius: 2rem;
 }
 
 
 #content{
     font-size: 1.2rem;
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 5rem;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+
 }
+
+#content ul, #content ol {
+    list-style-position: inside;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#content li {
+    display: list-item;
+    margin: 0.5rem 0;
+}
+
+#content h4{
+    text-align: center;
+    position: relative;
+}
+
+.Lebron{
+    width: 10cm;
+    height: auto;
+    display: block;
+    padding-top: 1rem;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+}
+
+.Agenda {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.Unfinished {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+
+.NewBusiness {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.Miscellaneous {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.Media {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
 
 main details {
     font-size: 0.9rem;
@@ -53,13 +140,13 @@ main p {
 }
 
 audio {
-    max-width: 20cm;
+    max-width: 15cm;
     align-items: start;
 
 }
 
 video {
-    max-height: 15cm;
+    max-height: 10cm;
     width: auto;
 }
 footer form{
