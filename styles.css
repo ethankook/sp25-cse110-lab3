@@ -121,7 +121,6 @@ div.AttendanceList, div.Agenda, div.Unfinished, div.NewBusiness, div.Miscellaneo
 section:has(video){
     border: 1px solid black;
 }
-}
 
 .Lebron{
     width: 10cm;
@@ -187,11 +186,6 @@ form{
     color: black;
     background-color: var(--first-color, white);
     flex-direction: column;
-
-    input[type="text"]{
-        width: 100%;
-        max-width: 300px;
-    }
 
     textarea{
         width: 100%;
