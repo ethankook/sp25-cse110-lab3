@@ -10,6 +10,7 @@ header {
     border-style: dashed;
     border-color: black;
     border-radius: 3rem;
+    position: sticky;
 }
 header h1{
     text-align: center;
@@ -21,18 +22,19 @@ header nav {
     text-align: center;
     padding: 3mm;
     display: inline;
-    position: sticky;
+    position: relative;
     
 }
 
 
-body #Lebron{
+#Lebron{
     width: 10cm;
     height: auto;
     display: block;
     padding-top: 1rem;
     justify-self: center;
 }
+
 
 #content{
     font-size: 1.2rem;
@@ -66,7 +68,15 @@ footer form{
     background-color: var(--first-color, white);
 }
 
-footer form legend {
+form legend {
     text-align: center;
     font-size: 5mm;
+}
+
+fieldset button:hover{
+    transform: scale(1.1);
+}
+
+fieldset button:active{
+    border-color: blue ;
 }
