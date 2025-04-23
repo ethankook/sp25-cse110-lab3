@@ -56,11 +56,25 @@ main {
     text-align: center;
 }
 
-nav ul a:hover{
+a:hover{
     transform: scale(1.1);
     background-color: rgb(197, 197, 197);
     border-radius: 2rem;
 }
+
+* {
+    padding: 0.3rem;
+}
+
+h1 {
+    color: black;
+}
+
+input[type="text"]{
+    border: 1px solid black;
+}
+
+
 
 
 #content{
@@ -68,10 +82,10 @@ nav ul a:hover{
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 5rem;
     justify-content: center;
     text-align: center;
     height: auto;
+    margin-bottom: 1rem;
 
 }
 
@@ -79,7 +93,7 @@ nav ul a:hover{
     list-style-position: inside;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding-top: 0;
 }
 
 #content li {
@@ -90,6 +104,23 @@ nav ul a:hover{
 #content h4{
     text-align: center;
     position: relative;
+}
+
+h4 ~ ul{
+    margin-top: 10px;
+}
+
+h4 + ol {
+    margin-top: 10px;
+}
+
+div.AttendanceList, div.Agenda, div.Unfinished, div.NewBusiness, div.Miscellaneous, div.Media {
+    border: 1px solid black;
+}
+
+section:has(video){
+    border: 1px solid black;
+}
 }
 
 .Lebron{
@@ -125,8 +156,8 @@ nav ul a:hover{
 }
 
 .Media {
-    grid-column-start: 1;
-    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-row-start: 2;
 }
 
 
@@ -151,13 +182,24 @@ video {
     max-height: 10cm;
     width: auto;
 }
-footer form{
-
+form{
+    display: flex;
     color: black;
     background-color: var(--first-color, white);
+    flex-direction: column;
+
+    input[type="text"]{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    textarea{
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
-form legend {
+fieldset > legend {
     text-align: center;
     font-size: 5mm;
 }
